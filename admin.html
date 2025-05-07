@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Panel - CADsimpleV7</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="admin.js"></script>
+</head>
+<body>
+    <div class="admin-container">
+        <h2>Admin Panel Access</h2>
+        <input type="text" id="accessKey" placeholder="Enter Access Key">
+        <button onclick="enterAdmin()">Enter</button>
+        <div id="adminContent" style="display:none;">
+            <h3>Admin Dashboard</h3>
+            <ul>
+                <li><a href="dispatcher.html">Dispatcher Interface</a></li>
+                <li><a href="police.html">Police Interface</a></li>
+                <li><a href="fire.html">Fire Interface</a></li>
+                <li><a href="ems.html">EMS Interface</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
