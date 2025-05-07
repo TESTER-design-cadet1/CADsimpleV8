@@ -1,8 +1,8 @@
-function enterAdmin() {
-    const key = document.getElementById("accessKey").value;
+function adminLogin() {
+    const key = document.getElementById('admin-key').value;
     if (key === "2001243") {
-        document.getElementById("adminContent").style.display = "block";
+        document.getElementById('admin-content').style.display = 'block';
     } else {
-        alert("Invalid access key.");
+        alert("Invalid admin key.");
     }
 }

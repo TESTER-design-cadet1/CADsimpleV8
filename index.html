@@ -2,15 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>CADsimpleV7</title>
+    <title>COMMUNITY PRIVATE CAD</title>
     <link rel="stylesheet" href="style.css">
     <script defer src="main.js"></script>
+    <script defer src="admin.js"></script>
 </head>
 <body>
     <div id="app">
-        <h1>CADsimpleV7 MDT</h1>
+        <h1>COMMUNITY PRIVATE CAD</h1>
         <button onclick="navigate('login.html')">Login</button>
         <button onclick="navigate('dispatcher.html')">Dispatcher Panel</button>
+
+        <h2>Admin Panel Access</h2>
+        <input type="text" id="accessKey" placeholder="Enter Access Key">
+        <button onclick="enterAdmin()">Enter Admin Panel</button>
+        <div id="adminContent" style="display:none;">
+            <h3>Admin Dashboard</h3>
+            <ul>
+                <li><a href="dispatcher.html">Dispatcher Interface</a></li>
+                <li><a href="police.html">Police Interface</a></li>
+                <li><a href="fire.html">Fire Interface</a></li>
+                <li><a href="ems.html">EMS Interface</a></li>
+            </ul>
+        </div>
     </div>
 </body>
 </html>
